@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPEXY</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/flowbite/dist/flowbite.css">
+</head>
+<body>
+
+<!-- Start Navbar -->
+<nav class="bg-white border-gray-200">
+    <div class="max-w-screen-xl flex justify-between flex-wrap items-center mx-auto py-8">
+        <div class="flex rtl:space-x-reverse">
+            <img src="./images/asset 0.png" class="h-8" alt="Logo" />
+        </div>
+
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button id="toggle" class="bg-gray-100 dark:bg-gray-800 dark:text-gray-200 capitalize text-gray-900 border py-2 px-4 rounded-md text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-900 transition-all duration-300">
+              Dark Mode
+            </button>
+          </div>
+
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                <li>
+                    <a href="#" class="block py-2 px-3 md:p-0 text-gray-400 hover:text-blue-500 dark:text-gray-800 dark:hover:text-blue-700 dark:border-gray-700">Home</a>
+                  </li>
+              <li>
+                <a href="#" class="block py-2 px-3 md:p-0 text-gray-400 hover:text-blue-500 dark:text-gray-800 dark:hover:text-blue-700 dark:border-gray-700">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 md:p-0 text-gray-400 hover:text-blue-500 dark:text-gray-800 dark:hover:text-blue-700 dark:border-gray-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+</nav>
+<!-- End Navbar -->
+
+
+
+<!-- Start Carousel -->
+<div id="controls-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="./images/bg2 (1).jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images//fabian-irsara-67l-QujB14w-unsplash.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/testtwo.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+  
+</div>
+<!-- End Carousel -->
+
+
+
+<!-- Start Card -->
+<section class="py-[70px] bg-black text-white dark:bg-white dark:text-gray-900 border text-center border-gray-400 dark:border-gray-100 ">
+
+
+    <div class="main-title py-[50px]">
+        <h2 class="text-[48px]">Tools</h2>
+        <p class="leading py-4">Lorem ipsum dolor sit amet consectetur !</p>
+      </div>
+      
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 mt-4 py-12 ">
+      <div class="card bg-white text-gray-900 rounded-md border border-black py-8 px-6 text-center relative">
+          <span class="absolute size-10 rounded-full bg-red-200 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+          </span>
+          <h3 class="text-2xl">Product</h3>
+          <div class="h-px w-10 bg-black my-2 mx-auto"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+
+        <div class="card bg-white text-gray-900 rounded-md border border-black py-8 px-6 text-center relative">
+          <span class="absolute size-10 rounded-full bg-red-200 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+          </span>
+          <h3 class="text-2xl">Product</h3>
+          <div class="h-px w-10 my-2 mx-auto bg-black "></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+
+        <div class="card bg-white text-gray-900 rounded-md border border-black py-8 px-6 text-center relative">
+          <span class="absolute size-10 rounded-full bg-red-200 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+          </span>
+          <h3 class="text-2xl">Product</h3>
+          <div class="h-px w-10 bg-black my-2 mx-auto"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+
+        <div class="card bg-white text-gray-900 rounded-md border border-black py-8 px-6 text-center relative">
+          <span class="absolute size-10 rounded-full bg-red-200 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+          </span>
+          <h3 class="text-2xl">Product</h3>
+          <div class="h-px w-10 bg-black my-2 mx-auto"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+
+        <div class="card bg-white text-gray-900 rounded-md border border-black py-8 px-6 text-center relative">
+          <span class="absolute size-10 rounded-full bg-red-200 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+          </span>
+          <h3 class="text-2xl">Product</h3>
+          <div class="h-px w-10 bg-black my-2 mx-auto"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+
+        <div class="card bg-white text-gray-900 rounded-md border border-black py-8 px-6 text-center relative">
+          <span class="absolute size-10 rounded-full bg-red-200 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i class="fa-solid fa-anchor-circle-exclamation"></i>
+          </span>
+          <h3 class="text-2xl">Product</h3>
+          <div class="h-px w-10 bg-black my-2 mx-auto"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+
+  </div>
+</div>
+
+</section>
+
+<!-- End Card -->
+
+
+
+
+<!-- Start Footer -->
+<footer class="bg-black text-center text-white flex justify-between items-center p-12">
+    <div class="cursor-pointer">
+      <img src="./images/asset 18.png" alt="footer-logo" />
+    </div>
+    <div class="space-x-4 cursor-pointer">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </footer>
+<!-- End Footer -->
+
+
+
+    <script src="/src/js/flowbite.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
